@@ -40,13 +40,13 @@ function App() {
     setIsStarted(false);
   };
   return (
-    <div>
+    <div className="mainDiv">
       <h1>Stopwatch</h1>
       <p>Time: {str}</p>
-      <button type="button" onClick={handleStartStop}>
-        Start
+      <button type="button" onClick={handleStartStop} className="btn">
+        {isStarted ? "Stop" : " Start"}
       </button>
-      <button type="button" onClick={handleReset}>
+      <button type="button" onClick={handleReset} className="btn">
         Reset
       </button>
     </div>
